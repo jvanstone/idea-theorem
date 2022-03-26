@@ -1,0 +1,4 @@
+node_modules
+
+wpgulp.config.js
+gulpfile.babel.js
