@@ -7,7 +7,18 @@ h6 {
 	clear: both;
 }
 
+
+
 h2 {
 	font-weight: 900;
-	color: red!important;
+	color: #FA4321;
+
+
+	span { 
+		text-decoration: none; 
+		color: black; 
+		border-bottom: 2px solid #FA4321;
+	}
 }
+
+body.home h1.entry-title { display: none!important; }
