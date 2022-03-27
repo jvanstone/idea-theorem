@@ -20,7 +20,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/@font-face{font-family:'Montserrat';src:url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype")}
+*/@font-face{font-family:'Montserrat';src:url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");font-display:swap}
+@font-face{font-family:'Montserrat-Black';src:url(./fonts/Montserrat/static/Montserrat-Black.ttf) format("truetype");font-display:swap}
+@font-face{font-family:'Montserrat-Medium';src:url(./fonts/Montserrat/static/Montserrat-Medium.ttf) format("truetype");font-display:swap}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}
 body{margin:0}
 main{display:block}
@@ -71,6 +73,7 @@ code,kbd,tt,var{font-family:monaco,consolas,"Andale Mono","DejaVu Sans Mono",mon
 abbr,acronym{border-bottom:1px dotted #666;cursor:help}
 mark,ins{background:#fff9c0;text-decoration:none}
 big{font-size:125%}
+strong{font-family:Montserrat-Medium,sans-serif;font-weight:500}
 body{background:#fff}
 hr{margin:0;text-align:left;width:56px;border-radius:5px}
 ul,ol{margin:0 0 1.5em 3em}
@@ -91,6 +94,7 @@ a:hover,a:active{outline:0}
 button,input[type="button"],input[type="reset"],input[type="submit"]{border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;background:#fa4321;color:rgba(0,0,0,0.8);line-height:1;padding:.6em 1em .4em}
 button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover{border-color:#ccc #bbb #aaa}
 button:active,button:focus,input[type="button"]:active,input[type="button"]:focus,input[type="reset"]:active,input[type="reset"]:focus,input[type="submit"]:active,input[type="submit"]:focus{border-color:#aaa #bbb #bbb}
+.menu-toggle{margin:0 auto;width:100%}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea{color:#666;border:1px solid #ccc;border-radius:3px;padding:3px}
 input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus{color:#111}
 select{border:1px solid #ccc}
@@ -100,7 +104,7 @@ textarea{width:100%}
 .site-header .site-title,.site-header .site-description{display:none}
 .site-header .site-navigtion{width:50vw;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding-right:1.5em}
 .main-navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;width:100%;border:solid 0 #ccc}
-.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0;padding-right:5rem;padding-top:.5rem;text-transform:uppercase;font-weight:800}
+.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0;padding-right:5rem;padding-top:.5rem}
 .main-navigation ul ul{margin:0;padding:0;-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column nowrap;flex-flow:column nowrap;background-color:#fff;border-top:1px solid #ccc;width:100%}
 .main-navigation ul ul ul{left:-999em;top:0}
 .main-navigation ul ul li{margin:0 .0;padding:.7rem .5rem;width:100%;text-align:left;border-bottom:1px solid #ccc}
@@ -108,11 +112,12 @@ textarea{width:100%}
 .main-navigation ul ul a{background-color:#fff;color:black}
 .main-navigation ul ul :hover>a,.main-navigation ul ul .focus>a{color:#0a0a27}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{margin:0 1rem;padding:.25rem 2rem;position:relative}
-.main-navigation a{display:block;text-decoration:none;color:#0a0a27}
+.main-navigation li{margin:0 1rem;position:relative}
+.main-navigation a{padding:.25rem 1.75rem;display:block;text-decoration:none;color:#0a0a27;border:solid 1px #fff;font-family:Montserrat-Black,sans-serif;text-transform:uppercase}
+.main-navigation a:hover{border:solid 1px #fa4321}
 .main-navigation .current_page_item>a,.main-navigation .current-menu-item>a,.main-navigation .current_page_ancestor>a,.main-navigation .current-menu-ancestor>a{color:#0a0a27}
 .main-navigation .btn-contact{background-color:#fa4321}
-.main-navigation .btn-contact a{color:white}
+.main-navigation .btn-contact a{color:white;border-color:#fa4321}
 .main-navigation .btn-contact a:hover{color:black}
 .back-to-work{margin-bottom:0;padding-left:11rem;text-transform:uppercase;font-family:'Montserrat';font-style:normal;font-weight:700;font-size:18px;line-height:22px;letter-spacing:.9375px}
 .back-to-work::before{padding-right:1.7rem;content:url(./images/Arrow-9.png)}
@@ -123,8 +128,7 @@ textarea{width:100%}
 .comment-navigation .nav-links,.posts-navigation .nav-links,.post-navigation .nav-links{display:-webkit-box;display:-ms-flexbox;display:flex}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{text-align:end;-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}
-.menu li.has-children>a:after{color:#0a0a27;content:' ▼';vertical-align:1px}
-.menu li li.has-children>a:after{color:#222;content:' ►';font-size:10px;vertical-align:1px}
+.menu li.has-children>a:after{color:#0a0a27;content:url(./images/arrow-down.png);vertical-align:1px;margin-left:5px}
 .sticky{display:block}
 .post,.page{margin:0 0 1.5em}
 .updated:not(.published){display:none}
@@ -157,10 +161,11 @@ textarea{width:100%}
 .gallery-columns-8{grid-template-columns:repeat(8,1fr)}
 .gallery-columns-9{grid-template-columns:repeat(9,1fr)}
 .gallery-caption{display:block}
-.gallery-front{margin:3rem}
-.wp-block-gallery.has-nested-images figure.wp-block-image img{display:block;width:inherit;height:inherit}
-.wp-block-gallery.has-nested-images.columns-2 figure.wp-block-image:not(#individual-image):nth-of-type(n){-ms-flex-item-align:end;align-self:flex-end}
-.wp-block-gallery.has-nested-images.columns-2 figure.wp-block-image:not(#individual-image):nth-of-type(2n){-ms-flex-item-align:start;align-self:flex-start}
+.wp-block-gallery.has-nested-images{margin:1rem 0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:0 1rem}
+.wp-block-gallery.has-nested-images figure.wp-block-image{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-preferred-size:45%;flex-basis:45%;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;max-width:100%}
+.wp-block-gallery.has-nested-images figure.wp-block-image:nth-child(odd){-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.wp-block-gallery.has-nested-images figure.wp-block-image:nth-child(even){-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-item-align:end;align-self:flex-end;margin-bottom:0 !important}
+footer{display:none}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
 .infinity-end.neverending .site-footer{display:block}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}
@@ -171,4 +176,19 @@ textarea{width:100%}
 .aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto;margin-bottom:1.5em}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex}
+}@media screen and (min-width:545px) and (max-width:1000px){.site-header{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center}
+.site-header .site-branding{margin:0 auto;width:100%;margin:.5em 0}
+.site-header .main-navigation ul{padding-right:0}
+.site-header .main-navigation ul a{padding:.25rem .95rem}
+.back-to-work{padding-left:3rem !important}
+.our-work-woodbine{padding:1rem 1rem 1rem 2rem !important}
+.stack-on-tablet{display:block}
+}@media screen and (max-width:567px){.site-header{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center}
+.site-header .site-branding{margin:0 auto;width:100%;margin:.5em 0}
+.site-header .main-navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:column;-ms-flex-pack:end;-webkit-box-pack:flex-center !important;justify-content:flex-center !important;width:100%;border:solid 0 #ccc;text-align:center}
+.site-header .main-navigation ul{padding-right:0}
+.site-header .main-navigation .menu-toggle{display:inline-block !important;font-size:2em;-webkit-transition:color linear .15s;transition:color linear .15s}
+.site-header .main-navigation a.toggle-nav:link,.site-header .main-navigation a.toggle-nav:visited,.site-header .main-navigation a.toggle-nav:hover,.site-header .main-navigation a.toggle-nav:active{text-decoration:none;color:#fff}
+.back-to-work{padding-left:3rem !important}
+.our-work-woodbine{padding:1rem 1rem 1rem 2rem !important}
 }
