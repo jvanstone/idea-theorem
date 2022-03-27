@@ -177,7 +177,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-/** Add arrows to menu parent.
+/** 
+ * Add arrows to menu parent.
  *
  * @param  mixed $items
  * @return array
