@@ -1,0 +1,31 @@
+@media screen and (max-width: 544px) {
+
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        .site-branding { margin: 0 auto; width: 100%; margin: .5em 0;}
+        .main-navigation {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: column;
+            /* -webkit-box-pack: end; */
+            -ms-flex-pack: end;
+            /* justify-content: flex-end; */
+            width: 100%;
+            border: solid 0px #ccc;
+            text-align: center;
+
+            ul {
+                padding-right: 0;
+            }
+        }
+    }
+     .back-to-work { padding-left: 3rem!important; }
+
+     .our-work-woodbine { padding: 1rem 1rem 1rem 2rem!important;}
+}
