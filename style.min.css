@@ -20,7 +20,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}
+*/@font-face{font-family:'Montserrat';src:url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype")}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}
 body{margin:0}
 main{display:block}
 h1{font-size:2em;margin:.67em 0}
@@ -56,9 +57,11 @@ template{display:none}
 [hidden]{display:none}
 *,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}
 html{-webkit-box-sizing:border-box;box-sizing:border-box}
-body,button,input,select,optgroup,textarea{color:#404040;font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:1rem;line-height:1.5}
+body,button,input,select,optgroup,textarea{color:#0a0a27;font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
-h2{font-weight:900;color:red !important}
+h2{font-weight:900;color:#fa4321}
+h2 span{text-decoration:none;color:black;border-bottom:2px solid #fa4321}
+body.home h1.entry-title{display:none !important}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
 blockquote{margin:0 1.5em}
@@ -69,7 +72,7 @@ abbr,acronym{border-bottom:1px dotted #666;cursor:help}
 mark,ins{background:#fff9c0;text-decoration:none}
 big{font-size:125%}
 body{background:#fff}
-hr{background-color:#fa4321;border:0;height:1px;margin-bottom:1.5em}
+hr{margin:0;text-align:left;width:56px;border-radius:5px}
 ul,ol{margin:0 0 1.5em 3em}
 ul{list-style:disc}
 ol{list-style:decimal}
@@ -80,9 +83,9 @@ embed,iframe,object{max-width:100%}
 img{height:auto;max-width:100%}
 figure{margin:1em 0}
 table{margin:0 0 1.5em;width:100%}
-a{color:#fa4321}
-a:visited{color:purple}
-a:hover,a:focus,a:active{color:#191970}
+a{color:#0a0a27}
+a:visited{color:#0a0a27}
+a:hover,a:focus,a:active{color:#fa4321}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 button,input[type="button"],input[type="reset"],input[type="submit"]{border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;background:#fa4321;color:rgba(0,0,0,0.8);line-height:1;padding:.6em 1em .4em}
@@ -92,16 +95,29 @@ input[type="text"],input[type="email"],input[type="url"],input[type="password"],
 input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus{color:#111}
 select{border:1px solid #ccc}
 textarea{width:100%}
-.main-navigation{display:block;width:100%}
-.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
-.main-navigation ul ul{-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999}
+.site-header{padding:2rem 3rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row no-wrap;flex-flow:row no-wrap}
+.site-header .site-branding{width:50vw;text-align:center}
+.site-header .site-title,.site-header .site-description{display:none}
+.site-header .site-navigtion{width:50vw;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding-right:1.5em}
+.main-navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;width:100%;border:solid 0 #ccc}
+.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0;padding-right:5rem;padding-top:.5rem;text-transform:uppercase;font-weight:800}
+.main-navigation ul ul{margin:0;padding:0;-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column nowrap;flex-flow:column nowrap;background-color:#fff;border-top:1px solid #ccc;width:100%}
 .main-navigation ul ul ul{left:-999em;top:0}
+.main-navigation ul ul li{margin:0 .0;padding:.7rem .5rem;width:100%;text-align:left;border-bottom:1px solid #ccc}
 .main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{display:block;left:auto}
-.main-navigation ul ul a{width:200px;color:var(#fa4321)}
+.main-navigation ul ul a{background-color:#fff;color:black}
+.main-navigation ul ul :hover>a,.main-navigation ul ul .focus>a{color:#0a0a27}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{position:relative}
-.main-navigation a{display:block;text-decoration:none;color:var(#fa4321)}
-.main-navigation .current_page_item>a,.main-navigation .current-menu-item>a,.main-navigation .current_page_ancestor>a,.main-navigation .current-menu-ancestor>a{color:var(#fa4321)}
+.main-navigation li{margin:0 1rem;padding:.25rem 2rem;position:relative}
+.main-navigation a{display:block;text-decoration:none;color:#0a0a27}
+.main-navigation .current_page_item>a,.main-navigation .current-menu-item>a,.main-navigation .current_page_ancestor>a,.main-navigation .current-menu-ancestor>a{color:#0a0a27}
+.main-navigation .btn-contact{background-color:#fa4321}
+.main-navigation .btn-contact a{color:white}
+.main-navigation .btn-contact a:hover{color:black}
+.back-to-work{margin-bottom:0;padding-left:11rem;text-transform:uppercase;font-family:'Montserrat';font-style:normal;font-weight:700;font-size:18px;line-height:22px;letter-spacing:.9375px}
+.back-to-work::before{padding-right:1.7rem;content:url(./images/Arrow-9.png)}
+.back-to-work a{text-decoration:none}
+.back-to-work a:hover{background-color:#0a0a27}
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em}
 .comment-navigation .nav-links,.posts-navigation .nav-links,.post-navigation .nav-links{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -112,6 +128,9 @@ textarea{width:100%}
 .updated:not(.published){display:none}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
 .page-links{clear:both;margin:0 0 1.5em}
+.our-work-woodbine{margin:0 0 0 -1rem;padding:5.12rem 3.12rem 5rem 11rem;background:#fff;-webkit-box-shadow:0 4px 40px 8px rgba(0,0,0,0.07);box-shadow:0 4px 40px 8px rgba(0,0,0,0.07)}
+.our-work-woodbine h1{margin:2rem 0;padding:0;font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-style:normal;font-weight:500;font-size:39px;line-height:48px;letter-spacing:.316981px;color:#0a0a27}
+.our-work-woodbine p{font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .widget{margin:0 0 1.5em}

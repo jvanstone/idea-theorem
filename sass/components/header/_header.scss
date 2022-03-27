@@ -1,0 +1,22 @@
+
+.site-header {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-flow: row no-wrap;
+  
+        .site-branding { width: 50vw; text-align: center; }
+
+    .site-title, .site-description {
+        display: none;
+    }
+
+    .site-navigtion { 
+        width: 50vw; 
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.5em;
+    
+    }
+  
+}
+
