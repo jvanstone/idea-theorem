@@ -59,3 +59,19 @@ box-shadow: 0px 4px 40px 8px rgba(0, 0, 0, 0.07);
 }
 
 
+.the-challenge {
+	padding: 0 2rem;
+
+	h2 {
+		margin: 0;
+
+	}
+	p {
+		 margin-top: 4rem;
+		font-family: $font__main;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 32px;
+	}
+}

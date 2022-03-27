@@ -123,6 +123,8 @@ textarea{width:100%}
 .comment-navigation .nav-links,.posts-navigation .nav-links,.post-navigation .nav-links{display:-webkit-box;display:-ms-flexbox;display:flex}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{text-align:end;-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}
+.menu li.has-children>a:after{color:#0a0a27;content:' ▼';vertical-align:1px}
+.menu li li.has-children>a:after{color:#222;content:' ►';font-size:10px;vertical-align:1px}
 .sticky{display:block}
 .post,.page{margin:0 0 1.5em}
 .updated:not(.published){display:none}
@@ -131,6 +133,9 @@ textarea{width:100%}
 .our-work-woodbine{margin:0 0 0 -1rem;padding:5.12rem 3.12rem 5rem 11rem;background:#fff;-webkit-box-shadow:0 4px 40px 8px rgba(0,0,0,0.07);box-shadow:0 4px 40px 8px rgba(0,0,0,0.07)}
 .our-work-woodbine h1{margin:2rem 0;padding:0;font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-style:normal;font-weight:500;font-size:39px;line-height:48px;letter-spacing:.316981px;color:#0a0a27}
 .our-work-woodbine p{font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px}
+.the-challenge{padding:0 2rem}
+.the-challenge h2{margin:0}
+.the-challenge p{margin-top:4rem;font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-style:normal;font-weight:500;font-size:18px;line-height:32px}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .widget{margin:0 0 1.5em}
@@ -152,6 +157,10 @@ textarea{width:100%}
 .gallery-columns-8{grid-template-columns:repeat(8,1fr)}
 .gallery-columns-9{grid-template-columns:repeat(9,1fr)}
 .gallery-caption{display:block}
+.gallery-front{margin:3rem}
+.wp-block-gallery.has-nested-images figure.wp-block-image img{display:block;width:inherit;height:inherit}
+.wp-block-gallery.has-nested-images.columns-2 figure.wp-block-image:not(#individual-image):nth-of-type(n){-ms-flex-item-align:end;align-self:flex-end}
+.wp-block-gallery.has-nested-images.columns-2 figure.wp-block-image:not(#individual-image):nth-of-type(2n){-ms-flex-item-align:start;align-self:flex-start}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
 .infinity-end.neverending .site-footer{display:block}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}

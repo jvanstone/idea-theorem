@@ -21,3 +21,31 @@
 .gallery-caption {
 	display: block;
 }
+
+
+.gallery-front {
+	margin: 3rem;
+
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image img {
+	display: block;
+	width: inherit;
+	height: inherit;
+
+
+}
+
+.wp-block-gallery.has-nested-images.columns-2 {
+	figure.wp-block-image:not(#individual-image):nth-of-type(n) {
+		
+		align-self: flex-end;
+	}
+	figure.wp-block-image:not(#individual-image):nth-of-type(2n) {
+		
+	
+		align-self: flex-start;
+		
+	}
+	
+}
