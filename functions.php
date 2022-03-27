@@ -177,8 +177,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-// add arrows to menu parent 
-function oenology_add_menu_parent_class( $items ) {
+/** Add arrows to menu parent.
+ *
+ * @param  mixed $items
+ * @return array
+ */
+function vo_add_menu_parent_class( $items ) {
  
  $parents = array();
  foreach ( $items as $item ) {
@@ -195,4 +199,4 @@ function oenology_add_menu_parent_class( $items ) {
  
  return $items;
 }
-add_filter( 'wp_nav_menu_objects', 'oenology_add_menu_parent_class' );
+add_filter( 'wp_nav_menu_objects', 'vo_add_menu_parent_class' );
