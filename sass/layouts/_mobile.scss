@@ -1,4 +1,4 @@
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 567px) {
 
 
     .site-header {
@@ -15,7 +15,7 @@
             flex-direction: column;
             /* -webkit-box-pack: end; */
             -ms-flex-pack: end;
-            /* justify-content: flex-end; */
+            justify-content: flex-center!important;
             width: 100%;
             border: solid 0px #ccc;
             text-align: center;
@@ -23,6 +23,22 @@
             ul {
                 padding-right: 0;
             }
+
+            .menu-toggle {
+                display: inline-block !important;
+              
+            //    / margin: 25px;
+                font-size: 2em;
+                transition: color linear 0.15s;
+            }
+                 
+            a.toggle-nav:link, 
+            a.toggle-nav:visited,
+            a.toggle-nav:hover, 
+            a.toggle-nav:active {
+                text-decoration: none;
+                color: #fff;
+            } 
         }
     }
      .back-to-work { padding-left: 3rem!important; }
