@@ -15,7 +15,6 @@
 		text-transform: uppercase;
 		font-weight: 800;
 		
-		
 
 		ul {
 			margin: 0;
@@ -32,6 +31,7 @@
 
 			border-top: 1px solid #ccc;
 			width: 100%;
+			
 
 			ul {
 				left: -999em;
@@ -60,6 +60,8 @@
 				background-color: #fff;
 				
 				color: black;
+
+				
 				
 			}
 
@@ -76,6 +78,7 @@
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
+		
 		}
 	}
 
@@ -88,7 +91,7 @@
 		&.focus > a {
 		}
 
-		
+	
 
 	}
 
@@ -182,3 +185,17 @@
 		flex: 1 0 50%;
 	}
 }
+
+
+.menu li.has-children > a:after {
+	color: $color__text-main;
+	content: ' ▼';
+	//font-size: 10px;
+	vertical-align: 1px;
+   }
+   .menu li li.has-children > a:after {
+	color: #222;
+	content: ' ►';
+	font-size: 10px;
+	vertical-align: 1px;
+   }
